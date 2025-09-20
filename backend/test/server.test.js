@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../server"); // correct relative path
+const app = require("../server.js");
 
 describe("GET /api/emojis", () => {
   it("should return emoji JSON", async () => {
