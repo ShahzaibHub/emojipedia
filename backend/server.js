@@ -16,11 +16,12 @@ app.get("/api/emojis", (req, res) => {
   res.json(emojis);
 });
 
-// Start server only if NOT testing
+// Start server only if not testing
 if (process.env.NODE_ENV !== "test") {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 }
 
+// Export app for testing
 module.exports = app;
 

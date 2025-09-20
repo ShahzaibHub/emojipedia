@@ -8,20 +8,25 @@ on:
 jobs:
   build-test-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
       - name: Install backend dependencies
         run: |
           cd backend
           npm ci
+
       - name: Run backend tests
         run: |
           cd backend
-          NODE_ENV=test npm test
+          npm test
+
       - name: Deploy frontend to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
