@@ -1,22 +1,28 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
+const express = require("express");
+const cors = require("cors");
+const fs = require("fs");
+const path = require("path");
+
 const app = express();
+app.use(cors());
 
-app.use(cors()); // allow all origins
-app.use(express.json());
+// Read emojis JSON
+const emojisPath = path.join(__dirname, "../data/emojis.json");
+const emojis = JSON.parse(fs.readFileSync(emojisPath, "utf-8"));
 
-// Serve emojis
-app.get('/api/emojis', (req, res) => {
-    res.sendFile(path.join(__dirname, '../data/emojis.json'));
+// API endpoint
+app.get("/api/emojis", (req, res) => {
+  res.json(emojis);
 });
 
-// Export app for Jest testing
-module.exports = app;
-
-// Start server only if run directly (not when testing)
-if (require.main === module) {
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Only listen if not testing (prevents EADDRINUSE in Jest)
+if (process.env.NODE_ENV !== "test") {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 }
+
+// Export app for testing
+module.exports = app;
 
