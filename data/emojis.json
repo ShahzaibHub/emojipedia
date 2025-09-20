@@ -1,0 +1,123 @@
+[
+  {
+    "emoji": "😀",
+    "name": "Grinning Face",
+    "category": "Smileys",
+    "description": "A classic happy face, showing pure joy and positivity.",
+    "aliases": ["smile", "happy", "grin", "joyful", "beaming"],
+    "unicode": "U+1F600",
+    "example": "Feeling awesome today! 😀",
+    "mood": "happy",
+    "color_tag": "#FFD93B",
+    "popularity": 95
+  },
+  {
+    "emoji": "🐶",
+    "name": "Dog Face",
+    "category": "Animals",
+    "description": "Friendly dog face, represents loyalty and playfulness.",
+    "aliases": ["puppy", "pet", "doggo", "cute", "furball"],
+    "unicode": "U+1F436",
+    "example": "My dog is the cutest! 🐶",
+    "mood": "playful",
+    "color_tag": "#FFA07A",
+    "popularity": 90
+  },
+  {
+    "emoji": "🍕",
+    "name": "Pizza",
+    "category": "Food",
+    "description": "A delicious slice of pizza, perfect for food lovers.",
+    "aliases": ["food", "slice", "cheese", "yummy", "tasty"],
+    "unicode": "U+1F355",
+    "example": "Pizza night is the best night! 🍕",
+    "mood": "excited",
+    "color_tag": "#FF6347",
+    "popularity": 85
+  },
+  {
+    "emoji": "❤️",
+    "name": "Red Heart",
+    "category": "Symbols",
+    "description": "Represents love, affection, or deep fondness.",
+    "aliases": ["love", "heart", "like", "affection", "passion"],
+    "unicode": "U+2764",
+    "example": "I love coding! ❤️",
+    "mood": "love",
+    "color_tag": "#FF0000",
+    "popularity": 100
+  },
+  {
+    "emoji": "🚀",
+    "name": "Rocket",
+    "category": "Objects",
+    "description": "Signifies ambition, speed, or launching new projects.",
+    "aliases": ["launch", "fast", "space", "go", "soar"],
+    "unicode": "U+1F680",
+    "example": "Our app is taking off! 🚀",
+    "mood": "ambitious",
+    "color_tag": "#00BFFF",
+    "popularity": 88
+  },
+  {
+    "emoji": "😂",
+    "name": "Face with Tears of Joy",
+    "category": "Smileys",
+    "description": "Laughing so hard you cry, for hilarious moments.",
+    "aliases": ["lol", "funny", "laugh", "haha", "rofl"],
+    "unicode": "U+1F602",
+    "example": "That joke killed me! 😂",
+    "mood": "funny",
+    "color_tag": "#FFD700",
+    "popularity": 99
+  },
+  {
+    "emoji": "🌟",
+    "name": "Glowing Star",
+    "category": "Symbols",
+    "description": "Sparkling star, represents magic or excellence.",
+    "aliases": ["shine", "sparkle", "star", "bright", "magic"],
+    "unicode": "U+1F31F",
+    "example": "You did amazing work! 🌟",
+    "mood": "inspiring",
+    "color_tag": "#FFFF66",
+    "popularity": 80
+  },
+  {
+    "emoji": "🍔",
+    "name": "Hamburger",
+    "category": "Food",
+    "description": "Classic burger, shows hunger or fast food love.",
+    "aliases": ["burger", "food", "meal", "yum", "cheeseburger"],
+    "unicode": "U+1F354",
+    "example": "Lunchtime! 🍔",
+    "mood": "hungry",
+    "color_tag": "#FFA500",
+    "popularity": 82
+  },
+  {
+    "emoji": "🐱",
+    "name": "Cat Face",
+    "category": "Animals",
+    "description": "Cute cat face, playful and adorable.",
+    "aliases": ["kitty", "pet", "meow", "cute", "feline"],
+    "unicode": "U+1F431",
+    "example": "Look at this kitty! 🐱",
+    "mood": "playful",
+    "color_tag": "#FFB6C1",
+    "popularity": 87
+  },
+  {
+    "emoji": "💡",
+    "name": "Light Bulb",
+    "category": "Objects",
+    "description": "Represents ideas, creativity, and sudden insights.",
+    "aliases": ["idea", "brainstorm", "inspiration", "thought", "bright"],
+    "unicode": "U+1F4A1",
+    "example": "I got a brilliant idea! 💡",
+    "mood": "creative",
+    "color_tag": "#FFFF99",
+    "popularity": 85
+  }
+]
+
