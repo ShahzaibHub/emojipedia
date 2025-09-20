@@ -1,19 +1,22 @@
 const express = require('express');
 const cors = require('cors');
-const emojis = require('../data/emojis.json'); // make sure this path matches your data folder
-
+const path = require('path');
 const app = express();
-app.use(cors());
 
+app.use(cors()); // allow all origins
+app.use(express.json());
+
+// Serve emojis
 app.get('/api/emojis', (req, res) => {
-  const search = (req.query.search || '').toLowerCase();
-  const filtered = emojis.filter(e =>
-    e.name.toLowerCase().includes(search) ||
-    e.category.toLowerCase().includes(search) ||
-    e.aliases.some(a => a.toLowerCase().includes(search))
-  );
-  res.json(filtered);
+    res.sendFile(path.join(__dirname, '../data/emojis.json'));
 });
 
-app.listen(3000, () => console.log('Backend API running on http://localhost:3000'));
+// Export app for Jest testing
+module.exports = app;
+
+// Start server only if run directly (not when testing)
+if (require.main === module) {
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
 
